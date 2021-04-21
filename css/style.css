@@ -1,0 +1,2143 @@
+/* 
+------------------
+Template Name: Petuk - Restaurant & Cafe Template
+Author: Tweets-bird
+Author Email: adreetanipa@gmail.com
+Version: 1
+------------------
+----------------
+Table of Content
+----------------
+        1. Navbar Part 
+        2. banner part
+        3. About Us part
+        $. Services part
+        5. Our Menu part
+        6. Kitchen Experts part
+        7. Our Gallery part 
+        8. Testimonials part
+        9. Latest News part
+        10. Contact part
+
+Other pages:
+        11. Reservation page
+        12. Blog Details page
+        13. Gallery page
+    
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Pinyon+Script');
+
+/*============Common CSS Start===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 5px auto transparent;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*
+==========================================
+    Preloader
+==========================================
+*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    height: 100%;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center img {
+    height: 120px;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    z-index: 99;
+    margin: 0 auto;
+}
+
+/*============ Section Heading Part CSS Start===============*/
+
+.heading-center-6 span,
+.heading-center-5 span,
+.heading-center-4 span,
+.heading-center-3 span,
+.heading-center-2 span,
+.heading-center span,
+.heading span {
+    color: #55acee;
+    font-size: 34px;
+    font-family: "Pinyon Script";
+    font-weight: 600;
+    line-height: 64px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+.heading-center-6 p,
+.heading-center-5 p,
+.heading-center-4 p,
+.heading-center-3 p,
+.heading-center-2 p,
+.heading-center p,
+.heading p {
+    position: relative;
+    color: #A0522D;
+    font-size: 42px;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.heading-center p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 29%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: -1;
+}
+
+.heading-center-2 p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 28%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: -1;
+}
+
+.heading-center-3 p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 28%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: 99;
+}
+
+.heading-center-4 p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 29%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: 99;
+}
+
+.heading-center-5 p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 26%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: 99;
+}
+
+.heading-center-6 p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: 29%;
+    transform: translateX(50%);
+    top: 10px;
+    z-index: 99;
+}
+
+.heading p:after {
+    position: absolute;
+    content: '';
+    background: #55acee;
+    height: 5px;
+    width: 30px;
+    left: -40px;
+    top: 10px;
+    z-index: -1;
+}
+
+.section {
+    padding-top: 80px;
+}
+
+/*=============================
+   Navbar Part Css Start
+==============================*/
+
+
+.navbar {
+    position: absolute;
+    background: #F5F5F5;
+    width: 100%;
+    top: 0;
+    margin: 0 !important;
+    padding: 0px 0 9px !important;
+    z-index: 111;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -o-transition: all ease .4s;
+}
+
+.sticky {
+    box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    -webkit-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    -moz-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    -o-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+}
+
+.sticky {
+    padding: 0px 0 10px;
+    position: fixed;
+    animation: sticky .5s;
+    -webkit-animation: sticky .5s;
+    -moz-animation: sticky .5s;
+    -o-animation: sticky .5s;
+    z-index: 1000;
+}
+
+@keyframes sticky {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.header-nav .navbar-nav .nav-link {
+    font-family: 'Josefin Sens', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 9;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.navbar-nav .nav-link {
+    transition: 0.3s ease;
+    border-top: 4px solid transparent;
+    padding: 30px 0;
+}
+
+.navbar-nav .active,
+.navbar-nav .nav-link:hover {
+    border-top: 4px solid #55acee;
+    color: #55acee !important;
+}
+
+.navbar-expand-md .navbar-nav a {
+    margin: 0 10px;
+}
+
+.nav-item a {
+    color: #A0522D;
+}
+
+.navbar-brand {
+    margin-top: 6px;
+}
+
+.navbar-brand img {
+    width: 300px;
+}
+
+.navbar-nav .m-nav {
+    margin-left: 60px;
+}
+
+
+/* dropdown menu css */
+.dropdown-menu {
+    padding: 10px 0px;
+    width: 190px;
+    top: 64px;
+    min-width: 190px;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, .1);
+    border-radius: 0;
+    background: #F5F5F5;
+    border: none;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background: none;
+}
+
+.dropdown-menu>li {
+    padding: 8px 10px 8px 16px;
+}
+
+.dropdown-menu>li>a {
+    font-size: 16px;
+    position: relative;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Josefin Sens', sans-serif;
+    color: #555;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li:hover a {
+    background: none;
+    color: #55acee !important;
+    font-weight: 700;
+    transition: all ease .4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}
+
+.dropdown-menu>li>a {
+    color: #555 !important;
+    padding: 10px 8px !important;
+    text-align: left;
+    margin: 0 !important;
+    font-weight: 700 !important;
+}
+
+.header-nav .navbar-nav li .active span,
+.header-nav .navbar-nav li a:hover span,
+.header-nav .navbar-nav li a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.custom_nav ul>li>a:focus:after,
+.custom_nav ul>li.active>a:after,
+.custom_nav ul>li:hover>a:after {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        top: 110%;
+
+    }
+
+    .custom_nav ul>li:hover>.dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 106%;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: 2px;
+        width: 240px;
+    }
+}
+
+/* =============Navbar Part CSS End============= */
+
+
+/* =====================================
+           Banner Part Css 
+======================================= */
+.tg-sliderholder {
+    overflow: hidden;
+    position: relative;
+}
+
+.pogoSlider-slide:after {
+    position: absolute;
+    content: '';
+    background: url(../images/smoke.png);
+    height: 100%;
+    width: 100%;
+    bottom: -30%;
+    opacity: 0.4;
+    animation: marquee1 60s linear infinite;
+    z-index: -99;
+}
+
+@keyframes marquee1 {
+    0% {
+        background-position: 0, 0
+    }
+
+    100% {
+        background-position: -1009px, 0
+    }
+}
+
+.pogoSlider-slide {
+    background-size: cover !important;
+    z-index: -9999;
+}
+
+.tg-homeslider .pogoSlider-slide {
+    float: left;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.tg-slidercontent {
+    padding-top: 30px;
+    z-index: 9999;
+}
+
+.tg-slidercontent h6 {
+    color: white;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4px;
+    padding-bottom: 15px;
+}
+
+.tg-slidercontent h1 {
+    color: white;
+    font-size: 90px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+    text-transform: capitalize;
+    letter-spacing: -5px;
+    word-spacing: 6px;
+    padding-bottom: 40px;
+}
+
+.button26 {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    background: #55acee;
+}
+
+.sim-button a {
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-right {
+    display: inline-block;
+}
+
+.sim-button {
+    height: 50px;
+    width: 165px;
+    line-height: 54px;
+    z-index: 99;
+}
+
+.button26 a::before,
+.button26 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transform: translate(-13%, -190%) rotate(-25deg);
+    transform: translate(-13%, -190%) rotate(-25deg);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.button26 a::after {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button26 a:hover::before,
+.button26 a:hover::after {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.button26 a:hover::before,
+.button26 a:hover::after {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+/*===============Banner Part CSS End============*/
+
+
+/*=================About Us Part CSS Start================*/
+
+#about {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.about-inner p {
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A0522D;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.about-side-2,
+.about-side-1 {
+    padding-bottom: 30px;
+}
+
+.about-photo {
+    padding-top: 30px;
+}
+
+/*============About Us Part CSS End==============*/
+
+
+/*============== Services part CSS Start ==============*/
+
+.services {
+    padding: 40px 0 45px;
+    position: relative;
+}
+
+.services:after {
+    position: absolute;
+    content: '';
+    width: 1350px;
+    height: 370px;
+    background: #f5f5f5;
+    border-radius: 200px;
+    top: -30px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -8;
+}
+
+.service-inner {
+    padding: 0 20px;
+}
+
+.service-icon i {
+    line-height: 80px;
+    color: #55acee;
+    font-size: 20px;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+}
+
+.service-inner:hover i {
+    box-shadow: 0px 0px 20px 0px rgba(240, 84, 86, .2);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(240, 84, 86, .2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(240, 84, 86, .2);
+    -o-box-shadow: 0px 0px 20px 0px rgba(240, 84, 86, .2);
+}
+
+.service-inner h3 {
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+    font-family: 'Josefin Sens', sans-serif;
+    text-transform: capitalize;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    z-index: 9;
+}
+
+.service-inner:hover h3 {
+    color: #55acee;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+}
+
+.service-inner p {
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    padding-top: 10px;
+}
+
+/*============= Services part CSS End==============*/
+
+
+/*=============== Our Menu part CSS Start==============*/
+.menu {
+    position: relative;
+
+}
+
+.menu .button-group li a {
+    font-size: 16px;
+    color: #A0522D444;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 500;
+    padding: 20px 35px;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+.menu .button-group li {
+    position: relative;
+}
+
+.menu .button-group li:first-child::after {
+    display: none;
+}
+
+.menu .button-group li:after {
+    position: absolute;
+    content: '';
+    background: #adadad;
+    height: 1px;
+    width: 40%;
+    top: 14px;
+    left: -20%;
+}
+
+.menu .button-group li .active {
+    color: #55acee !important;
+}
+
+.menu .button-group {
+    display: contents;
+}
+
+.menu .border-relate {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.border-relate:after {
+    position: absolute;
+    content: '';
+    border-top: 1px dotted #ddd;
+    top: 0;
+    width: 560%;
+    left: -60%;
+}
+
+.pro-row {
+    padding: 50px 0;
+}
+
+.work-cont li h3 {
+    font-size: 20px;
+    color: #A0522D;
+    font-weight: 700;
+    font-family: 'Josefin Sens', sans-serif;
+    text-transform: capitalize;
+    line-height: 24px;
+    position: relative;
+    width: 240px;
+}
+
+.work-cont li span {
+    display: table-cell;
+    padding-left: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    margin-top: -10px;
+}
+
+.work-cont li h3,
+.work-cont li em {
+    display: table-cell;
+}
+
+.work-cont li em {
+    color: #55acee !important;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.work-cont li p {
+    font-size: 14px;
+    color: #A0522D444;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.work-image {
+    text-align: center;
+}
+
+.work-image h4 {
+    text-align: center;
+    color: #55acee !important;
+    font-family: "Pinyon Script", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 50px;
+    line-height: 24px;
+    font-size: 38px;
+}
+
+/*===============Our Menu part CSS End===============*/
+
+/*============= Kitchen Experts Part CSS Start============*/
+
+.chef {
+    background: url(../images/chef-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.chef-slick {
+    padding-top: 60px;
+}
+
+.chef-inner {
+    text-align: center;
+}
+
+.chef-inner h4 {
+    font-size: 22px;
+    color: #222;
+    font-weight: 700;
+    font-family: 'Josefin Sens', sans-serif;
+    text-transform: capitalize;
+    line-height: 24px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.chef-inner p {
+    position: relative;
+    font-size: 16px;
+    color: #A0522D444;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 6px 0;
+}
+
+.chef-inner ul {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.chef-inner ul li {
+    float: left;
+}
+
+.chef-inner ul li a {
+    color: #666;
+    font-size: 14px;
+    padding: 0 6px;
+}
+
+.chef-inner li:hover a {
+    color: #55acee !important;
+    transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.chef-details:hover h4 {
+    color: #55acee !important;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.chef-img img {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.chef-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-img:after {
+    content: '';
+    position: absolute;
+    width: 340px;
+    border-radius: 50%;
+}
+
+.chef-img:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 768px;
+    background-color: transparent;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    left: -90%;
+    top: -154px;
+    margin-left: -0px;
+    transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transform: rotate(21deg);
+}
+
+.chef-details:hover .chef-img:before {
+    left: 50%;
+    margin-left: -44px;
+    background-color: #55acee;
+    transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+/*============ Kitchen Experts Part CSS End============*/
+
+/*============ Our Gallery Part CSS Start============*/
+.gallery {
+    padding-top: 50px;
+}
+
+.gallery-details {
+    padding-top: 80px;
+}
+
+.gallery-btn {
+    padding-top: 60px;
+}
+
+.gallery-btn .sim-button {
+    text-align: center;
+    display: inline-block;
+}
+
+.gallery-photo {
+    position: relative;
+}
+
+.gallery-photo:hover .overlay {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay_shape i {
+    position: absolute;
+    font-size: 20px;
+    color: rgba(240, 84, 86, 1);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 49px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    bottom: 100%;
+    left: 0%;
+    right: 0;
+    background: rgba(240, 84, 86, .4);
+    overflow: hidden;
+    width: 0%;
+    height: 0;
+    transition: all .6s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    left: 37%;
+    transform: translateX(-30%);
+}
+
+.overlay-text h3 {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Josefin Sans";
+}
+
+.overlay-text p {
+    position: relative;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: "Josefin Sans";
+    color: #fff;
+}
+
+/*============ Our Gallery Part CSS End============*/
+
+/*============Booking Part CSS Start==============*/
+.booking {
+    background: url(../images/booking-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    margin-top: 50px;
+}
+
+.book-text h4 {
+    color: #55acee !important;
+    font-family: "Pinyon Script", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66px;
+    padding-bottom: 20px;
+}
+
+.book-text p {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+/*============Booking Part CSS End==============*/
+
+
+/*============Testimonials Part CSS End==============*/
+
+
+.testimonial-slick {
+    padding-top: 80px;
+    position: relative;
+}
+
+.testimonial-slick:after {
+    position: absolute;
+    content: '';
+    width: 32%;
+    height: 86%;
+    background: url(../images/dhone-pata.png) no-repeat;
+    transform: rotate(-100deg);
+    left: -23%;
+    top: -15%;
+    z-index: -1;
+}
+
+.testimonial-slider-img {
+    position: relative;
+}
+
+.testimonial-slider-img:after {
+    position: absolute;
+    content: '';
+    width: 510px;
+    height: 260px;
+    background: #55acee;
+    left: -90px;
+    top: 50%;
+    z-index: -1;
+}
+
+.details-item p {
+    font-size: 16px;
+    color: #A0522D;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.details-item h3 {
+    position: relative;
+    font-size: 32px;
+    color: #55acee !important;
+    padding-left: 5px;
+    font-family: "Pinyon Script", sans-serif;
+    font-weight: 600;
+    line-height: 34px;
+    padding-top: 20px;
+}
+
+.details-item h4 {
+    position: relative;
+    font-size: 16px;
+    color: #DEB887444;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    padding-top: 6px;
+    line-height: 24px;
+}
+
+.details-item i {
+    color: #e3e1e1;
+    font-size: 60px;
+    padding: 20px 0 20px;
+}
+
+.content span i {
+    color: #fcba03;
+    font-size: 14px;
+    padding: 10px 0 0px;
+}
+
+.testimonial-slick .slick-dots {
+    position: absolute;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    bottom: 8%;
+    width: 100%;
+    left: 63%;
+    opacity: 1;
+    z-index: 999;
+}
+
+.testimonial-slick .slick-dots li {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 13px;
+    margin: 3px -17px;
+    color: #55acee;
+    width: 13px;
+    background: #e3e1e1;
+}
+
+.testimonial-slick .slick-dots .slick-active {
+    background: #55acee;
+}
+
+.testimonial-slick .slick-dots li button {
+    border: 0;
+    display: block;
+    outline: none;
+    font-size: 1px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Josefin Sens";
+    background: transparent;
+    color: #e3e1e1;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/*=================Testimonials Part CSS End==============*/
+
+
+/*================= Latest News Part CSS Start==============*/
+
+.blog {
+    margin-top: 140px;
+}
+
+.blog-slick {
+    padding-top: 80px;
+}
+
+.blog-event {
+    background: #55acee;
+    height: 180px;
+    width: 150px;
+    margin-top: -25px;
+    padding: 33px 28px 30px;
+    margin-left: 18px;
+    border: 5px solid #fff;
+}
+
+.blog-event h2 {
+    text-align: left;
+    color: #fff;
+    font-family: "Pinyon Script", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.blog-event h6 {
+    text-align: left;
+    color: #fff;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.blog-text h3 {
+    text-align: left;
+    color: #55acee;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+.blog-text span {
+    font-size: 14px;
+}
+
+.blog-text p {
+    text-align: left;
+    color: #A0522D;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.slidNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6%;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #999;
+    z-index: 9;
+    color: #999;
+}
+
+.slidprev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6%;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #999;
+    z-index: 9;
+    color: #999;
+}
+
+.slidNext:hover,
+.slidprev:hover {
+    background: #55acee;
+    border: 1px solid #55acee;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+/*=================Blog Part CSS End==============*/
+
+
+/*==============Contact Part CSS Start=============*/
+
+.contact {
+    background: url("../images/footer-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0 0px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.contact-logo {
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.contact-logo img {
+    width: 140px;
+}
+
+.contact-logo:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background: #333;
+    width: 41%;
+    left: 0;
+    top: 40px;
+}
+
+.contact-logo:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background: #333;
+    width: 41%;
+    right: 0;
+    top: 40px;
+}
+
+.contact-book p,
+.contact-address p {
+    color: #fff;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+    padding-top: 20px;
+}
+
+.contact-links ul li a,
+.contact-address ul li {
+    text-align: center;
+    color: #fff;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.contact-links ul {
+    padding-top: 17px;
+    text-align: center;
+}
+
+.contact-links ul li:hover a {
+    color: #55acee;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.contact-email {
+    padding-bottom: 10px;
+}
+
+.contact-photo h5,
+.contact-links h5,
+.contact-book h5,
+.contact-address h5 {
+    color: #fff;
+    font-family: "Josefin Sens", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.contact-book span {
+    color: #55acee;
+    font-weight: 700;
+}
+
+.contact-photo ul li {
+    float: left;
+    padding-top: 26px;
+    text-align: center;
+}
+
+.contact-photo ul li img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+/*==============Contact Part CSS End=============*/
+
+/*==============Footer Part CSS Start=============*/
+
+
+.footer-br {
+    position: relative;
+    padding-top: 60px;
+}
+
+.copy-right p {
+    text-align: center;
+    padding: 10px 0 30px;
+    font-size: 14px;
+    color: #ddd;
+    line-height: 24px;
+    font-family: "Josefin Sens", sans-serif;
+}
+
+.copy-right p a {
+    color: #55acee;
+}
+
+.footer-icon {
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+}
+
+.footer-icon ul li a i {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+}
+
+.footer-icon ul {
+    margin-bottom: 10px;
+    ;
+}
+
+.footer-icon ul li a {
+    color: #fff;
+    padding-right: 8px;
+}
+
+.footer-icon ul li .fa-facebook-f {
+    background: #3b5998;
+}
+
+.footer-icon ul li .fa-twitter {
+    background: #55acee;
+}
+
+.footer-icon ul li .fa-youtube {
+    background: #cd201f;
+}
+
+.footer-icon ul li .fa-instagram {
+    background: #d50bd9;
+}
+
+.footer-icon ul li:hover {
+    transform: scale(1.1);
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+/*==============Footer Part CSS End==============*/
+
+
+/*==============================================
+                Other's Page CSS Start
+        ===============================================*/
+
+/*=====================================
+ Gallery page Css Start
+=======================================*/
+
+#inner_area {
+    background: url(../images/breadcramb-image.jpg) no-repeat;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    -webkit-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    -moz-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+}
+
+.inner_Page h1 {
+    font-size: 56px;
+    font-family: "Pinyon Script", sans-serif;
+    color: #55acee;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 150px;
+}
+
+.inner_area ul.breadcrumb {
+    list-style: none;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Josefin Sens", sans-serif;
+    margin-bottom: 70px;
+    display: block;
+}
+
+.inner_area .breadcrumb>li {
+    display: inline-block;
+}
+
+.inner_area ul.breadcrumb li p {
+    display: inline;
+    font-size: 18px;
+    color: #55acee;
+    text-transform: capitalize;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+}
+
+.inner_area ul.breadcrumb li i {
+    color: #666;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.inner_area ul.breadcrumb li+li:before {
+    display: none;
+}
+
+.inner_area ul.breadcrumb li a p {
+    color: #666;
+    text-decoration: none;
+}
+
+.offer-inner,
+.inner-btn {
+    margin-bottom: 60px;
+}
+
+/*=====================================
+ Gallery page Css End
+=======================================*/
+
+/*=====================================
+ Reservation page Css Start
+=======================================*/
+.reservation {
+    padding-top: 100px;
+}
+
+.reserve_form {
+    border-radius: 0;
+}
+
+.form-control {
+    color: #fff !important;
+}
+
+.form-inline .form-group .form-control,
+.form-inline .form-group textarea {
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #999 !important;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-radius: 0;
+    -moz-appearance: none;
+}
+
+.reservation .form-group textarea::placeholder,
+.reservation .form-group input::placeholder {
+    color: #999;
+    font-family: "Josefin Sens", sans-serif;
+}
+
+.pb-10 {
+    margin-bottom: 30px;
+}
+
+.form-inline .form-group textarea {
+    height: 130px;
+    resize: none;
+    background-color: transparent;
+}
+
+.form-inline .comment textarea {
+    height: 50px;
+    resize: none;
+    background-color: transparent;
+}
+
+.reservation .sim-button {
+    width: 100%;
+}
+
+.form-control:focus {
+    color: #A0522D;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+
+/*=====================================
+ Reservation page Css End
+=======================================*/
+
+/*=====================================
+ Special dishes page Css Start
+=======================================*/
+.s_dish-slick {
+    padding-top: 60px;
+}
+
+.dish-inner h4 {
+    text-align: center;
+    padding: 30px 0 15px;
+    font-size: 38px;
+    text-transform: capitalize;
+    font-family: "Pinyon Script", sans-serif;
+    color: #55acee;
+    font-weight: 700;
+}
+
+.dish-inner p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: "Josefin Sens", sans-serif;
+    color: #A0522D;
+    font-weight: 400;
+}
+
+.dish-inner h5 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Josefin Sens", sans-serif;
+    color: #A0522D;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.dish-inner h5 span {
+    color: #55acee;
+}
+
+/*=====================================
+ Special dishes page Css End
+=======================================*/
+
+
+/* comment */
+
+.comments {
+    margin-bottom: 60px;
+}
+
+.comments-title {
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    font-family: "Josefin Sens", sans-serif;
+    color: #151515;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 40px 0 10px;
+    text-transform: capitalize;
+}
+
+.blog_comments .media {
+    padding: 0 0 10px;
+}
+
+.media-middle {
+    margin-top: 20px;
+}
+
+.media_first {
+    border-bottom: 1px solid #ddd;
+}
+
+.blog_comments .media .media-left img {
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.blog_comments .media .media-left {
+    padding-right: 20px;
+}
+
+.blog_media .media-heading {
+    font-size: 16px;
+    font-family: "Josefin Sens", sans-serif;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 600;
+    color: #151515;
+}
+
+.blog_media .media-heading span {
+    float: right;
+    color: #999999;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.blog_media p {
+    padding: 10px 0 5px !important;
+    font-size: 16px;
+    font-family: "Josefin Sens", sans-serif;
+    color: #151515;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.blog_media a {
+    color: #777;
+}
+
+.blog_media a:hover {
+    color: #55acee;
+}
+
+.form-detail {
+    margin-bottom: 70px;
+}
+
+/* contact form */
+
+.form-detail {
+    margin-bottom: 70px;
+}
+
+.blogdetails_form h4 {
+    padding: 15px 0 25px !important;
+    text-transform: none;
+}
+
+.blogdetails_form .form-group textarea {
+    width: 100%;
+    height: 120px;
+    padding: 5px 10px;
+}
+
+.blogdetails_form .form-group {
+    margin-left: 0;
+}
+
+.blogdetails_form .form-group input,
+.blogdetails_form .form-group textarea {
+    color: #777;
+    text-transform: capitalize;
+    resize: none;
+    font-family: 'Josefin Sens', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+.blogdetails_form .form-group textarea ::-webkit-input-placeholder,
+.blogdetails_form .form-group input::-webkit-input-placeholder {
+    font-family: 'Josefin Sens', sans-serif;
+}
+
+.blogdetails_form .form-group input:-moz-placeholder,
+.blogdetails_form .form-group textarea:-moz-placeholder {
+    font-family: 'Josefin Sens', sans-serif;
+}
+
+.blogdetails_form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+
+.blogdetails_form .book_btn {
+    width: 100%;
+}
+
+.blog_grid_btn a {
+    color: #55acee;
+}
+
+.blogdetails_form {
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+.blog-detail-img img {
+    width: 100%;
+    margin: 50px 0 0;
+}
+
+.blog-btn .sim-button {
+    width: 100%;
+}
+
+.blog-btn .button26 a::before,
+.blog-btn .button26 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transform: translate(-28%, -316%) rotate(-38deg);
+    transform: translate(-28%, -316%) rotate(-38deg);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.blog-btn .button26 a::after {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.blog-btn .button26 a:hover::before,
+.blog-btn .button26 a:hover::after {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.blog-btn .button26 a:hover::before,
+.blog-btn .button26 a:hover::after {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+/*==============Portfolio Page CSS End==============*/
+
+
+/*============== Blog Details Page CSS Start==============*/
+
+#blog-details,
+#blog-details-side {
+    padding-top: 80px;
+}
+
+.details-img-sub {
+    display: inline-flex;
+}
+
+.details-img-sub img {
+    margin-right: 20px;
+}
+
+.details-banner {
+    position: relative;
+}
+
+.details-banner img {
+    margin-bottom: 30px;
+}
+
+.blog-page-inner ul li {
+    display: inline-block;
+    color: #A0522D;
+    margin: 0 4px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 2px 18px 2px;
+    background: #ddd;
+    font-family: 'Josefin Sens', sans-serif;
+    border-radius: 3px;
+}
+
+.blog-page-inner {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.blog-page-inner ul li:first-child {
+    margin-left: 0;
+}
+
+.blog-page-inner ul li a {
+    color: #A0522D;
+}
+
+.blog-page-inner ul .btn-color {
+    background: #55acee;
+}
+
+.blog-page-inner ul .btn-color:hover {
+    background: #55acee;
+}
+
+.blog-page-inner ul .btn-color a {
+    color: #fff;
+}
+
+.blog-page-inner ul .btn-color:hover a {
+    color: #A0522D;
+}
+
+.details-banner h4 {
+    font-size: 24px;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    color: #151515;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.details-img-sub .post-text {
+    padding-top: 10px;
+}
+
+.post-text {
+    padding-top: 4px;
+}
+
+.post-text h4 {
+    font-size: 14px;
+    font-family: 'Josefin Sens', sans-serif;
+    color: #777777;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.post-comment {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.post-comment ul {
+    margin-top: 20px;
+}
+
+.post-comment ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.post-comment ul li a {
+    color: #999999;
+    font-size: 14px;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+}
+
+.post-comment ul li a i {
+    margin-right: 9px;
+}
+
+.blog-detail-inner {
+    margin-top: 28px;
+}
+
+.blog-detail-inner p {
+    font-size: 16px;
+    font-family: 'Josefin Sens', sans-serif;
+    color: #A0522D444;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.blog_highlights p {
+    background-color: #f1f1f1;
+    padding: 26px 20px 26px 30px;
+    border-left: 3px solid #55acee;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #A0522D444;
+    font-size: 16px;
+    margin: 10px 0 30px;
+}
+
+.blog-detail-bottom p {
+    font-size: 16px;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    color: #A0522D444;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.tag {
+    display: inline-flex;
+    margin-top: 75px;
+}
+
+.tag h2 {
+    font-size: 20px;
+    font-family: 'Josefin Sens', sans-serif;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 700;
+    color: #151515;
+    padding-bottom: 8px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.tag a {
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 31px;
+    text-transform: capitalize;
+    font-family: 'Josefin Sens', sans-serif;
+    font-weight: 400;
+    margin: 10px 12px 0 0;
+    font-size: 14px;
+    color: #A0522D444;
+    outline: 0;
+    text-transform: capitalize;
+}
+
+.tag a:hover {
+    border-color: #55acee;
+    color: #55acee;
+}
+
+.share,
+.share ul li {
+    display: inline-flex;
+}
+
+.share h2 {
+    font-size: 20px;
+    font-family: 'Josefin Sens', sans-serif;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 700;
+    color: #222;
+    padding-bottom: 8px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.share ul {
+    margin-top: 27px;
+}
+
+.share ul li a {
+    margin: 10px 0 0 10px;
+    text-align: center;
+    border: 1px solid #777;
+    float: left;
+    color: #777;
+    font-size: 14px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.share ul li a:hover {
+    color: #fff;
+    background: #55acee;
+    border: 1px solid #55acee;
+}
+
+
+/*============== Blog Details Page CSS End==============*/
+
+/* === BACK TO TOP CSS == */
+
+.back-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 25px 0px rgba(255, 90, 90, 0.5);
+    display: none;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+    z-index: 999;
+    padding: 12px;
+    text-align: center;
+}
+
+.back-top-btn i {
+    color: #55acee;
+    position: relative;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+}
+
+.back-top-btn:hover {
+    background: #55acee;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(255, 90, 90, 0.5);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(255, 90, 90, 0.5);
+    box-shadow: 0px 0px 35px 0px rgba(255, 90, 90, 0.5);
+}
+
+.back-top-btn:hover i {
+    color: #fff;
+}

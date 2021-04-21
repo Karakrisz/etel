@@ -1,0 +1,21 @@
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.phtos' doesn't exist
+[ERROR] Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OFFET  ?' at line 1
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] 2020-08-24T15:40:54+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:68 Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Lunch, Dinner, Desert, Drink) VALUES (?,?,?,?,?,?)' at line 1
+[ERROR] 2020-08-28T11:37:46+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:80 Query error: Table 'etel-ellato.food_options' doesn't exist
+[ERROR] 2020-08-28T11:37:53+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:80 Query error: Table 'etel-ellato.food_options' doesn't exist
+[ERROR] 2020-08-28T13:23:19+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:92 Query error:Table 'etel-ellato.food_options' doesn't exist
+[ERROR] 2020-10-22T16:43:26+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:68 Query error:Unknown column 'dailyoffer_name' in 'field list'
+[ERROR] 2020-10-23T14:48:03+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:104 Query error:Unknown column 'monday_name' in 'field list'
+[ERROR] 2020-10-23T16:43:13+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:140 Query error:Unknown column 'tuesday_name' in 'field list'
+[ERROR] 2021-04-18T12:46:12+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:289 Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' image (test, image) VALUES (?,?)' at line 1
+[ERROR] 2021-04-18T12:46:51+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:289 Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' image (test, image) VALUES (?,?)' at line 1
+[ERROR] 2021-04-18T12:47:09+0200 /Applications/XAMPP/xamppfiles/htdocs/etel-ellato/core/functions.php:289 Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' image (test, image) VALUES (?,?)' at line 1
